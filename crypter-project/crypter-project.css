@@ -1,0 +1,651 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.crypter__header {
+  background: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.crypter__header__wrap {
+  display: flex;
+  align-items: center;
+}
+.crypter__header__wrap__logo {
+  height: 32px;
+}
+.crypter__header__wrap__line {
+  height: 40px;
+  width: 2px;
+  background: #e6E8ec;
+  border-radius: 2px;
+  margin: 0 32px;
+}
+@media all and (max-width: 1150px) {
+  .crypter__header__wrap__line {
+    display: none;
+  }
+}
+.crypter__header__wrap__button {
+  margin-top: 10px;
+}
+@media all and (max-width: 1150px) {
+  .crypter__header__wrap__button {
+    display: none;
+  }
+}
+.crypter__header__wrap__button__btn {
+  color: var(--neutrals-4, #777E90);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+.crypter__header__wrap__button__btn:not(:first-child) {
+  margin-left: 32px;
+}
+.crypter__header__wrap__search {
+  display: flex;
+  align-items: center;
+  margin-left: 160px;
+  border: 2px solid #e6E8ec;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+@media all and (max-width: 940px) {
+  .crypter__header__wrap__search {
+    margin-left: 20px;
+  }
+}
+@media all and (max-width: 750px) {
+  .crypter__header__wrap__search {
+    display: none;
+  }
+}
+.crypter__header__wrap__search__input {
+  border: none;
+  padding: 5px 12px;
+  outline: none;
+}
+.crypter__header__wrap__notification {
+  margin-left: 24px;
+}
+.crypter__header__wrap__upload {
+  margin-left: 24px;
+}
+@media all and (max-width: 670px) {
+  .crypter__header__wrap__upload {
+    display: none;
+  }
+}
+.crypter__header__wrap__upload-btn {
+  border-radius: 90px;
+  border: none;
+  padding: 12px 16px;
+  background: var(--primary-1, #3772FF);
+  color: var(--neutrals-8, #FCFCFD);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  cursor: pointer;
+}
+.crypter__header__wrap__account {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  border-radius: 90px;
+  height: 40px;
+  width: 147px;
+  background: white;
+  padding: 4px 12px 4px 4px;
+  border: 2px solid var(--neutrals-6, #E6E8EC);
+}
+.crypter__header__wrap__account-avatar {
+  border-radius: 48px;
+  align-items: flex-start;
+}
+.crypter__header__wrap__account-numbers {
+  color: var(--neutrals-2, #23262F);
+  text-align: center;
+  /* Button 2 */
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  margin-left: 12px;
+}
+.crypter__header__wrap__account-eth {
+  color: var(--primary-4, #45B26B);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 12px;
+}
+
+.crypter__section__followers {
+  display: flex;
+  justify-content: center;
+  background: no-repeat url(/crypter-project/crypter-project-img/background-image.png);
+  background-size: 100vw 30vh;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 52px;
+}
+@media all and (max-width: 650px) {
+  .crypter__section__followers {
+    padding-top: 140px;
+  }
+}
+.crypter__section__followers__mobile {
+  display: none;
+}
+@media all and (max-width: 650px) {
+  .crypter__section__followers__mobile {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+  }
+}
+.crypter__section__followers__container {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+@media all and (max-width: 650px) {
+  .crypter__section__followers__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (max-width: 940px) {
+  .crypter__section__followers__container {
+    justify-content: start;
+  }
+}
+@media all and (max-width: 1150px) {
+  .crypter__section__followers__container {
+    width: 100%;
+  }
+}
+.crypter__section__followers__container__block {
+  border: 1px solid var(--neutrals-6, #E6E8EC);
+  border-radius: 16px;
+  background: var(--neutrals-8, #FCFCFD);
+  padding: 32px;
+  width: 35%;
+  box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+}
+@media all and (max-width: 900px) {
+  .crypter__section__followers__container__block {
+    width: 25%;
+  }
+}
+@media all and (max-width: 650px) {
+  .crypter__section__followers__container__block {
+    width: 40%;
+    order: 1;
+    margin-top: 20px;
+  }
+}
+.crypter__section__followers__container__block__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media all and (max-width: 650px) {
+  .crypter__section__followers__container__block__profile {
+    order: 2;
+  }
+}
+.crypter__section__followers__container__block__profile img {
+  border-radius: 50%;
+}
+.crypter__section__followers__container__block__profile h2 {
+  text-align: center;
+  margin-top: 24px;
+  color: var(--neutrals-2, #23262F);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+.crypter__section__followers__container__block__profile h3 {
+  text-align: center;
+  color: var(--neutrals-2, #23262F);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+}
+.crypter__section__followers__container__block__profile p {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--neutrals-4, #777E90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.crypter__section__followers__container__block__profile a {
+  color: var(--neutrals-2, #23262F);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  text-decoration: none;
+}
+.crypter__section__followers__container__block__profile-coins {
+  display: flex;
+}
+.crypter__section__followers__container__block__profile-coins img {
+  margin-left: 8px;
+}
+.crypter__section__followers__container__block__profile-globe {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.crypter__section__followers__container__block__profile-globe-img {
+  margin-right: 8px;
+}
+.crypter__section__followers__container__block__buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.crypter__section__followers__container__block__buttons-btn {
+  display: flex;
+}
+.crypter__section__followers__container__block__buttons-btn-follow {
+  border-radius: 90px;
+  background: var(--primary-1, #3772FF);
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: var(--neutrals-8, #FCFCFD);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.crypter__section__followers__container__block__buttons-btn-send {
+  border-radius: 40px;
+  border: 2px solid var(--neutrals-6, #E6E8EC);
+  padding: 7px;
+  cursor: pointer;
+  background: #fff;
+}
+.crypter__section__followers__container__block__buttons-btn:not(:first-child) {
+  margin-left: 9px;
+}
+.crypter__section__followers__container__block__icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+.crypter__section__followers__container__block__icons-img:not(:first-child) {
+  margin-left: 24px;
+}
+.crypter__section__followers__container__block-line {
+  margin: 48px auto;
+  border-radius: 2px;
+  width: 100%;
+  height: 1px;
+  background: var(--neutrals-6, #E6E8EC);
+}
+.crypter__section__followers__container__followers {
+  width: 65%;
+}
+@media all and (max-width: 940px) {
+  .crypter__section__followers__container__followers {
+    width: 60%;
+  }
+}
+.crypter__section__followers__container__followers__block__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+@media all and (max-width: 650px) {
+  .crypter__section__followers__container__followers__block__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+.crypter__section__followers__container__followers__block__buttons__wrap__btn {
+  padding: 12px 16px;
+  border-radius: 90px;
+  border: 2px solid var(--neutrals-4, #777E90);
+  background: none;
+  display: flex;
+  cursor: pointer;
+  color: var(--neutrals-8, #FCFCFD);
+  text-align: right;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.crypter__section__followers__container__followers__block__buttons__wrap__btn-icons {
+  margin-left: 12px;
+}
+.crypter__section__followers__container__followers__block__buttons__wrap:not(:first-child) {
+  margin-left: 15px;
+}
+.crypter__section__followers__container__followers__navigation {
+  margin-top: 110px;
+  display: flex;
+  margin-left: 64px;
+}
+@media all and (max-width: 950px) {
+  .crypter__section__followers__container__followers__navigation {
+    overflow: scroll;
+    width: 100%;
+  }
+}
+.crypter__section__followers__container__followers__navigation__wrap-btn {
+  text-wrap: nowrap;
+  border: none;
+  background: none;
+  padding: 6px 12px;
+  color: var(--neutrals-4, #777E90);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  cursor: pointer;
+}
+.crypter__section__followers__container__followers__navigation__wrap-btn:hover {
+  background: var(--neutrals-3, #353945);
+  border-radius: 100px;
+  color: #fff;
+}
+.crypter__section__followers__container__followers__navigation__wrap:not(:first-child) {
+  margin-left: 12px;
+}
+.crypter__section__followers__container__followers__artists__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 64px;
+}
+.crypter__section__followers__container__followers__artists {
+  margin-top: 48px;
+  display: flex;
+}
+.crypter__section__followers__container__followers__artists__avatar img {
+  border-radius: 128px;
+}
+.crypter__section__followers__container__followers__artists__title {
+  margin-left: 20px;
+  width: 105px;
+  margin-right: 50px;
+}
+.crypter__section__followers__container__followers__artists__title h2 {
+  color: var(--neutrals-2, #23262F);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.crypter__section__followers__container__followers__artists__title p {
+  color: var(--neutrals-4, #777E90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.crypter__section__followers__container__followers__artists__title button {
+  padding: 8px 12px;
+  border-radius: 90px;
+  border: 2px solid var(--neutrals-6, #E6E8EC);
+  background: none;
+  cursor: pointer;
+  color: var(--neutrals-2, #23262F);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.crypter__section__followers__container__followers__artists__image {
+  display: flex;
+  position: relative;
+}
+@media all and (max-width: 1120px) {
+  .crypter__section__followers__container__followers__artists__image {
+    overflow: scroll;
+  }
+}
+.crypter__section__followers__container__followers__artists__image-mrg:not(:first-child) {
+  margin-left: 10px;
+}
+.crypter__section__followers__container__followers__artists__image::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(to right, transparent 70%, rgb(255, 255, 255));
+}
+.crypter__section__followers__container__followers__artists__image img {
+  border-radius: 12px;
+}
+.crypter__section__followers__container__followers__artists__line {
+  margin-top: 32px;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background: var(--neutrals-6, #E6E8EC);
+}
+.crypter__section__followers__container__followers__artists__loading {
+  display: flex;
+  margin-top: 48px;
+  justify-content: center;
+}
+@media all and (max-width: 650px) {
+  .crypter__section__followers__container__followers__artists__loading {
+    display: none;
+  }
+}
+
+.crypter__footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+}
+@media all and (max-width: 1120px) {
+  .crypter__footer {
+    width: 90%;
+  }
+}
+.crypter__footer__container {
+  display: flex;
+  border-bottom: 1px solid #E6E8EC;
+  padding-bottom: 48px;
+  padding-top: 80px;
+  width: 100%;
+}
+@media all and (max-width: 650px) {
+  .crypter__footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.crypter__footer__container__title {
+  width: 25%;
+}
+.crypter__footer__container__title h2 {
+  color: var(--neutrals-2, #23262F);
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  margin-top: 32px;
+}
+.crypter__footer__container__info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.crypter__footer__container__info h2 {
+  color: var(--neutrals-2, #23262F);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.crypter__footer__container__info__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.crypter__footer__container__info__btn-style {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--neutrals-4, #777E90);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+}
+.crypter__footer__container__info__btn-style:not(:first-child) {
+  margin-top: 24px;
+}
+.crypter__footer__container__info:not(:first-child) {
+  margin-left: 32px;
+}
+@media all and (max-width: 650px) {
+  .crypter__footer__container__info:not(:first-child) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.crypter__footer__container__form {
+  width: 25%;
+}
+@media all and (max-width: 650px) {
+  .crypter__footer__container__form {
+    margin-top: 20px;
+  }
+}
+.crypter__footer__container__form h2 {
+  color: var(--neutrals-2, #23262F);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.crypter__footer__container__form__style {
+  width: 100%;
+}
+.crypter__footer__container__form__style p {
+  color: var(--neutrals-2, #23262F);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 40px;
+}
+.crypter__footer__container__form__style__wrap {
+  display: flex;
+  align-items: center;
+  border-radius: 90px;
+  margin-top: 24px;
+  border: 2px solid var(--neutrals-6, #E6E8EC);
+}
+.crypter__footer__container__form__style__wrap-input {
+  width: 82%;
+  border-radius: 90px;
+  border: none;
+  outline: none;
+  padding: 8px 8px 8px 16px;
+}
+.crypter__footer__container__form__style__wrap button {
+  width: 24px;
+  border: none;
+  height: 24px;
+  align-items: center;
+  background: var(--primary-1, #3772FF) url(/crypter-project/crypter-project-img/strelka-img.svg) center;
+  border-radius: 90px;
+  padding: 4px;
+}
+.crypter__footer__container__copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.crypter__footer__container__copyright p:first-child {
+  color: var(--neutrals-4, #777E90);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.crypter__footer__container__copyright p:last-child {
+  color: var(--neutrals-2, #23262F);
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.crypter__footer__container__copyright a {
+  text-decoration: none;
+  color: var(--primary-1, #3772FF);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@media all and (max-width: 650px) {
+  .collapse-sm {
+    display: none;
+  }
+}/*# sourceMappingURL=crypter-project.css.map */
